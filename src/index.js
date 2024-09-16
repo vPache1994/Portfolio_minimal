@@ -3,8 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Importa el CSS de AOS
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+AOS.init(); // Inicializa AOS
+
+
 root.render(
   <React.StrictMode>
     <App />
